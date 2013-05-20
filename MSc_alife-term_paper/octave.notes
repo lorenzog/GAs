@@ -1,0 +1,5 @@
+# plotting data from file 'res'
+
+load -force res ; plot (res(:,1), 'k;resource;', res(:,2), 'm;perturbation;', res(:,3), 'r;avg_A;', res(:,4), 'b;sum_effects;', res(:,6), 'c;unique_A;') ;  xlabel("timesteps") ; ylabel("resource level")
+
+

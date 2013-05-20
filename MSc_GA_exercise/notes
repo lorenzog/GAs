@@ -1,0 +1,7 @@
+
+$ wc -l 1fitness_10kruns.txt 
+10000 1fitness_10kruns.txt
+
+$ a=0 ; for i in $(cat 1fitness_10kruns.txt | awk ' { print $1 } ') ; do a=$((a+=i)) ; done ; echo "tot: $a avg: $((a/10000))"
+tot: 4545900 avg: 454
+
